@@ -7,48 +7,94 @@
 </head>
 
 <body>
-    <header>
-        <nav class="menu">
-            <ul>
-                <li class="menu_button"><a href="">Информация</a></li>
-                <li class="menu_button"><a href="">Фото и видео</a></li>
-                <li class="menu_button"><a href="">Карта штата</a></li>
-                <li class="menu_button"><a href="catalog.html">Гостиницы</a></li>
-            </ul>
-        </nav>
-        <a href="/index.html"><img class="menu_logo" src="#" alt="Логотип «Седона»"></a>
-    </header>
-    <main>
-        <!-- search form -->
-        <section class="catalog_hotels">
-            <ul>
-                <li class="hotels_card">
-                    <h3>Amara Resort &#38; Spa</h3> <img class="hotel_photo" src="#" alt="Фотография отеля Amara Resort &#38; Spa"> <span class="hotel_type">Гостиница</span> <span class="hotel_price">От 4000 р.</span> <a class="button_more" href="#">Подробнее</a>
-                    <button class="button_book" type="button">Забронировать</button>
-                    <div class="rating_stars"> <img class="star" src="#" alt=""> <img class="star" src="#" alt=""> <img class="star" src="#" alt=""> <img class="star" src="#" alt=""> </div> <span class="overall_rating">Рейтинг:8,5</span> </li>
-                <li class="hotels_card">
-                    <h3>Desert Quail Inn</h3> <img class="hotel_photo" src="#" alt="Фотография мотеля Desert Quail Inn"> <span class="hotel_type">Мотель</span> <span class="hotel_price">От 3000 р.</span> <a class="button_more" href="#">Подробнее</a>
-                    <button class="button_book" type="button">Забронировать</button>
-                    <div class="rating_stars"> <img class="star" src="#" alt=""> <img class="star" src="#" alt=""> <img class="star" src="#" alt=""> </div> <span class="overall_rating">Рейтинг:8,9</span> </li>
-                <li class="hotels_card">
-                    <h3>Villas at Poco Diablo</h3> <img class="hotel_photo" src="#" alt="Фотография апартаментов Villas at Poco Diablo"> <span class="hotel_type">Апартаменты</span> <span class="hotel_price">От 2000 р.</span> <a class="button_more" href="#">Подробнее</a>
-                    <button class="button_book" type="button">Забронировать</button>
-                    <div class="rating_stars"> <img class="star" src="#" alt=""> <img class="star" src="#" alt=""> </div> <span class="overall_rating">Рейтинг:9,2</span> </li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>#VISITSEDONA
-            <br> Тел:+7(495) 666-02-66</p>
-        <div class="social">
-            <ul>
-                <li> <a class="social_twitter" href="#">Twitter</a> </li>
-                <li> <a class="social_facebook" href="#">Facebook</a> </li>
-                <li> <a class="social_youtube" href="#">Youtube</a> </li>
-            </ul>
-        </div>
-        <a class="academy_logo" href="https://htmlacademy.ru/intensive/htmlcss"></a>
-    </footer>
+    <div class="content">
+        <header class="header">
+            <div class="top_content">
+                <nav class="top_menu">
+                    <ul>
+                        <li class="menu_button"><a href="#">Информация</a></li>
+                        <li class="menu_button"><a href="#">Фото и видео</a></li>
+                        <li class="menu_button"><a href="#">Карта штата</a></li>
+                        <li class="menu_button"><a href="catalog.html">Гостиницы</a></li>
+                    </ul>
+                </nav>
+                <a href="/index.html"><img class="menu_logo" src="/766433-sedona-27/img/logo-sedona.svg" width="139" height="71" alt="Логотип «Седона»"></a>
+            </div>
+        </header>
+        <main class="main">
+            <!-- search form -->
+            <section class="catalog_hotels">
+                <ul class="hotels_list">
+                    <li class="hotels_card">
+                        <p class="hotel_photo_block"><img class="hotel_photo" src="/766433-sedona-27/img/hotel_photo_1.jpg" width="135" height="90" alt="Фотография отеля Amara Resort &#38; Spa"></p>
+                        <div class="hotel_description">
+                            <span class="hotel_description_row1">
+                                <h3 class="hotel_title">Amara Resort &#38; Spa</h3>
+                                <span class="rating_stars"> <img class="star" src="/766433-sedona-27/img/star.svg" alt=""> <img class="star" src="/766433-sedona-27/img/star.svg" alt=""> <img class="star" src="/766433-sedona-27/img/star.svg" alt=""> <img class="star" src="/766433-sedona-27/img/star.svg" alt=""> </span>
+                            </span>
+                            <span class="hotel_description_row2">
+                                <span class="hotel_type">Гостиница</span>
+                                <span class="hotel_price">От 4000 р.</span>
+                            </span>
+                            <span class="hotel_description_row3">
+                                <a class="button_more" href="#">Подробнее</a>
+                                <button class="button_book" type="button">Забронировать</button>
+                                <span class="overall_rating">Рейтинг:8,5</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="hotels_card">
+                        <p class="hotel_photo_block"><img class="hotel_photo" src="/766433-sedona-27/img/hotel_photo_2.jpg" width="135" height="90" alt="Фотография мотеля Desert Quail Inn"></p>
+                        <div class="hotel_description">
+                            <span class="hotel_description_row1">
+                                <h3 class="hotel_title">Desert Quail Inn</h3>
+                                <span class="rating_stars"> <img class="star" src="/766433-sedona-27/img/star.svg" alt=""> <img class="star" src="/766433-sedona-27/img/star.svg" alt=""> <img class="star" src="/766433-sedona-27/img/star.svg" alt=""></span>
+                            </span>
+                            <span class="hotel_description_row2">
+                                <span class="hotel_type">Мотель</span>
+                                <span class="hotel_price">От 3000 р.</span>
+                            </span>
+                            <span class="hotel_description_row3">
+                                <a class="button_more" href="#">Подробнее</a>
+                                <button class="button_book" type="button">Забронировать</button>
+                                <span class="overall_rating">Рейтинг:8,9</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="hotels_card">
+                        <p class="hotel_photo_block"><img class="hotel_photo" src="/766433-sedona-27/img/hotel_photo_3.jpg" width="135" height="90" alt="Фотография апартаментов Villas at Poco Diablo"></p>
+                        <div class="hotel_description">
+                            <span class="hotel_description_row1">
+                                <h3 class="hotel_title">Villas at Poco Diablo</h3>
+                                <span class="rating_stars"> <img class="star" src="/766433-sedona-27/img/star.svg" alt=""> <img class="star" src="/766433-sedona-27/img/star.svg" alt=""></span>
+                            </span>
+                            <span class="hotel_description_row2">
+                                <span class="hotel_type">Апартаменты</span>
+                                <span class="hotel_price">От 2000 р.</span>
+                            </span>
+                            <span class="hotel_description_row3">
+                                <a class="button_more" href="#">Подробнее</a>
+                                <button class="button_book" type="button">Забронировать</button>
+                                <span class="overall_rating">Рейтинг:9,2</span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer_contacts">#VISITSEDONA
+                <br> Тел:+7(495) 666-02-66</p>
+            <div class="social">
+                <ul>
+                    <li> <a class="social_twitter" href="#"><img class="social_twitter_icon" width="17" height="15" src="/766433-sedona-27/img/twitter.svg" alt=""></a> </li>
+                    <li> <a class="social_facebook" href=""><img src="/766433-sedona-27/img/fb-icon.svg" width="12" height="22" alt="" class="social_facebook_icon"></a> </li>
+                    <li> <a class="social_youtube" href=""><img src="/766433-sedona-27/img/youtube.svg" width="20" height="16" alt="" class="social_youtube_icon"></a> </li>
+                </ul>
+            </div>
+            <a class="academy_logo" href="https://htmlacademy.ru/intensive/htmlcss"><img class="academy_logo_icon" src="/766433-sedona-27/img/logo-htmlacademy.svg" width="114" height="40" alt=""></a>
+        </footer>
+    </div>
 </body>
 
 </html>
