@@ -17,8 +17,8 @@
                         <li class="menu_button"><a href="#">Карта штата</a></li>
                         <li class="menu_button"><a href="/catalog.html">Гостиницы</a></li>
                     </ul>
-                </nav> <img class="menu_logo" src="/766433-sedona-27/img/logo-sedona.svg" width="139" height="71" alt="Логотип «Седона»">
-                <div class="banner"> <img class="banner_image" src="/766433-sedona-27/img/intro-welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону!">
+                </nav> <img class="menu_logo" src="img/logo-sedona.svg" width="139" height="71" alt="Логотип «Седона»">
+                <div class="banner"> <img class="banner_image" src="img/intro-welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону!">
                     <div class="banner_decorations"></div>
                 </div>
             </div>
@@ -27,8 +27,7 @@
             <h1 class="page_title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1> <span class="trip_reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>
             <!-- red block -->
             <p class="interested">Заинтересовались?</p>
-            <p class="trip_date">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p> <a href="/login.html" class="search_button">Поиск гостиницы в Седоне</a>
-            <!-- search form and map -->
+            <p class="trip_date">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </main>
         <footer class="footer">
             <p class="footer_contacts">#VISITSEDONA
@@ -36,33 +35,54 @@
             <div class="social">
                 <ul>
                     <li>
-                        <a class="social_twitter" href="#"><img class="social_twitter_icon" width="17" height="15" src="/766433-sedona-27/img/twitter.svg" alt=""></a>
+                        <a class="social_twitter" href="#"><img class="social_twitter_icon" width="17" height="15" src="img/twitter.svg" alt=""></a>
                     </li>
                     <li>
-                        <a class="social_facebook" href=""><img src="/766433-sedona-27/img/fb-icon.svg" width="12" height="22" alt="" class="social_facebook_icon"></a>
+                        <a class="social_facebook" href=""><img src="img/fb-icon.svg" width="12" height="22" alt="" class="social_facebook_icon"></a>
                     </li>
                     <li>
-                        <a class="social_youtube" href=""><img src="/766433-sedona-27/img/youtube.svg" width="20" height="16" alt="" class="social_youtube_icon"></a>
+                        <a class="social_youtube" href=""><img src="img/youtube.svg" width="20" height="16" alt="" class="social_youtube_icon"></a>
                     </li>
                 </ul>
             </div>
-            <a class="academy_logo" href="https://htmlacademy.ru/intensive/htmlcss"><img class="academy_logo_icon" src="/766433-sedona-27/img/logo-htmlacademy.svg" width="114" height="40" alt=""></a>
+            <a class="academy_logo" href="https://htmlacademy.ru/intensive/htmlcss"><img class="academy_logo_icon" src="img/logo-htmlacademy.svg" width="114" height="40" alt=""></a>
         </footer>
+        <div class="hotel_search">
+        <h2><a href="/login.html" class="search_button">Поиск гостиницы в Седоне</a></h2>
         <form class="hotel_search_form" method="post" action="https://echo.htmlacademy.ru">
-            <p class="hotel_search_paragraph">
-                <label class="trip_date" for="arrive_date">Дата заезда:</label>
-                <input class="trip_date_form" type="date" name="arrive_date" value="2017-04-24"> <img class="calendar_icon" src="/766433-sedona-27/img/calendar.svg" width="21" height="22" alt="Иконка календаря"> </p>
-            <p class="hotel_search_paragraph">
-                <label class="trip_date" for="depart_date">Дата выезда:</label>
-                <input class="trip_date_form" type="date" name="depart_date" value="2017-07-04"> <img class="calendar_icon" src="/766433-sedona-27/img/calendar.svg" width="21" height="22" alt="Иконка календаря"> </p>
-            <p class="hotel_search_paragraph">
+            <div class="hotel_search_paragraph">
+                <label class="trip_date_text" for="arrive_date">Дата заезда:</label>
+                <div class="trip_date">
+                    <input class="trip_date_form" type="date" name="arrive_date" value="2017-04-24">
+                    <img class="calendar_icon" src="img/calendar.svg" width="21" height="22" alt="Иконка календаря">
+                </div>
+            </div>
+            <div class="hotel_search_paragraph">
+                <label class="trip_date_text" for="depart_date">Дата выезда:</label>
+                <div class="trip_date">
+                    <input class="trip_date_form" type="date" name="depart_date" value="2017-07-04">
+                    <img class="calendar_icon" src="img/calendar.svg" width="21" height="22" alt="Иконка календаря">
+                </div>
+            </div>
+            <div class="hotel_search_paragraph">
                 <label class="tourist_quantity" for="adult_quantity">Взрослые:</label>
-                <input class="tourist_quantity_form" type="number" name="adult_quantity" value="2"> </p>
-            <p class="hotel_search_paragraph">
+                <div class="tourist_quantity_form">
+                    <button class="minus">-</button>
+                    <input class="quantity_form" type="number" name="adult_quantity" value="2">
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="hotel_search_paragraph">
                 <label class="tourist_quantity" for="children_quantity">Дети:</label>
-                <input class="tourist_quantity_form" type="number" name="children_quantity" value="0"> </p>
+                <div class="tourist_quantity_form">
+                    <button class="minus">-</button>
+                    <input class="quantity_form" type="number" name="children_quantity" value="0">
+                    <button class="plus">+</button>
+                </div>
+            </div>
             <button class="find_hotel_button" type="submit">Найти</button>
         </form>
+        </div>
     </div>
 </body>
 
