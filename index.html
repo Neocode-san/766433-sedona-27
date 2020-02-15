@@ -3,6 +3,12 @@
 
 <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
     <title>Поиск гостиниц в Седоне</title>
 </head>
 
@@ -12,10 +18,10 @@
             <div class="top_content">
                 <nav class="top_menu">
                     <ul class="menu_list">
-                        <li class="menu_button"><a href="#">Информация</a></li>
+                        <li class="menu_button active"><a href="#">Информация</a></li>
                         <li class="menu_button"><a href="#">Фото и видео</a></li>
                         <li class="menu_button"><a href="#">Карта штата</a></li>
-                        <li class="menu_button"><a href="/catalog.html">Гостиницы</a></li>
+                        <li class="menu_button"><a href="catalog.html">Гостиницы</a></li>
                     </ul>
                 </nav> <img class="menu_logo" src="img/logo-sedona.svg" width="139" height="71" alt="Логотип «Седона»">
                 <div class="banner"> <img class="banner_image" src="img/intro-welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону!">
@@ -27,13 +33,13 @@
             <h1 class="page_title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1> <span class="trip_reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>
             <!-- red block -->
             <p class="interested">Заинтересовались?</p>
-            <p class="trip_date">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p class="trip_date_text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </main>
         <footer class="footer">
             <p class="footer_contacts">#VISITSEDONA
                 <br> Тел:+7(495) 666-02-66</p>
             <div class="social">
-                <ul>
+                <ul class="social_list">
                     <li>
                         <a class="social_twitter" href="#"><img class="social_twitter_icon" width="17" height="15" src="img/twitter.svg" alt=""></a>
                     </li>
@@ -45,10 +51,15 @@
                     </li>
                 </ul>
             </div>
+            <div class="academy_credits">
+            <span class="academy_credits_text">website by</span>
             <a class="academy_logo" href="https://htmlacademy.ru/intensive/htmlcss"><img class="academy_logo_icon" src="img/logo-htmlacademy.svg" width="114" height="40" alt=""></a>
+            </div>
         </footer>
         <div class="hotel_search">
-        <h2><a href="/login.html" class="search_button">Поиск гостиницы в Седоне</a></h2>
+        <div class="title_container">
+        <h2 class="hotel_search_title"><a href="/login.html" class="search_button">Поиск гостиницы в Седоне</a></h2>
+        </div>
         <form class="hotel_search_form" method="post" action="https://echo.htmlacademy.ru">
             <div class="hotel_search_paragraph">
                 <label class="trip_date_text" for="arrive_date">Дата заезда:</label>
