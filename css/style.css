@@ -89,14 +89,17 @@ a { text-decoration: none;
 }
 .title_container{
     background-color: #766357;
+    width: 568px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 86px;
 }
 .title_container:hover,
 .title_container:focus {
     background-color: #604e43;
 }
-.title_container:active {
+.title_container:active a {
     background-color: #503e33;
-    /* При нажатии текст не реагирует на псевдокласс. Не понял, как это заставить работать. */
     color: rgba(255, 255, 255, 0.3);
 }
 .hotel_search_title>a {
