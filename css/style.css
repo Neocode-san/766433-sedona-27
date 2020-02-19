@@ -1,4 +1,11 @@
 /* Overall */
+*, *::before, *::after {
+box-sizing: inherit;
+}
+html {
+box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -8,7 +15,7 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     color: #000000;
-    background-color: #ffffff;
+    background-color: #f2f2f2;;
 }
 img { max-width: 100%
 }
@@ -43,6 +50,10 @@ a { text-decoration: none;
 
 
 /* Main */
+.content {
+    width: 1200px;
+    margin: 0 auto;
+}
 .page_title {
     font-size: 21px;
     font-weight: bold;
@@ -51,9 +62,10 @@ a { text-decoration: none;
 }
 .trip_reasons {
     font-size: 14px;
-    font-weight: normal;
+
     text-align: center;
     color: #333333;
+    line-height: 1.86;
 }
 .interested {
     font-size: 30px;
@@ -61,11 +73,10 @@ a { text-decoration: none;
   line-height: 1.2;
     text-align: center;
 }
-.trip_date_text {
-    font-size: 14px;
-  line-height: 1.71;
-color: #333333;
+.trip_date_choice {
     text-align: center;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
 
@@ -155,7 +166,7 @@ color: #333333;
     font-size: 21px;
   font-weight: bold;
   line-height: 1.24;
-  text-align: center;
+  text-align: left;
 }
 .social_list {
     list-style: none;
@@ -242,3 +253,153 @@ color: #333333;
   text-align: center;
   color: #666666;
 }
+
+/* Layout header */
+.content {
+    background-color: #ffffff;
+}
+
+.menu_list {
+    display: flex;
+    margin-top: inherit;
+    padding-left: 0;
+    margin-bottom: inherit;
+
+}
+.menu_button {
+    width: 239px;
+    min-height: 56px;
+}
+/* Перепробовал всё, чтобы выровнять текст ссылок внутри меню. Получается выровнять по горизонтали, а по вертикали не понимаю как это работает.*/
+.menu_button:nth-child(2) {
+    margin-right: auto;
+}
+.menu_logo {
+    position: absolute;
+    left: 600px;
+}
+/* layout main */
+.banner {
+    width: 458px;
+    margin: 0 auto;
+    padding-top: 61px;
+}
+.banner_wrapper {
+    height: 510px;
+    background-image: url(/766433-sedona-27/img/banner_main.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.page_title {
+    width: 440px;
+    margin: 0 auto;
+    margin-top: 61px;
+    margin-bottom: 38px;
+}
+.trip_reasons {
+    display: block;
+    width: 489px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+}
+.trip_date_choice {
+    width: 434px;
+    margin: 0 auto;
+}
+/* layout footer */
+.footer {
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social_list {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    padding: 0;
+}
+.social_list>li {
+    width: 46px;
+    height: 48px;
+}
+.social_icon {
+    width: 100%;
+    margin: auto;
+}
+.academy_credits {
+    width: 197px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* layout catalog */
+.hotels_list {
+    padding-left: 0;
+}
+.hotels_card {
+    display: flex;
+    height: 150px;
+
+}
+.hotel_description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90px;
+}
+.hotel_description_row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.hotel_description_row3 {
+    display: flex;
+
+}
+.hotel_description_row3>a:nth-child(2) {
+    margin-right: auto;
+}
+
+.hotel_photo_block {
+    margin-right: 30px;
+    margin-left: 72px;
+}
+.hotel_title {
+    padding: 0;
+    margin: 0;
+}
+.button_more {
+    width: 110px;
+    height: 27px;
+    text-align: center;
+    margin-right: 6px;
+}
+.button_book {
+    width: 142px;
+    height: 27px;
+    text-align: center;
+}
+.rating_stars:last-child, .overall_rating {
+    margin-right: 72px;
+}
+.overall_rating {
+    display: block;
+    width: 110px;
+    height: 27px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+.hotel_type {
+    display: inline-block;
+    width: 110px;
+    margin-right: 6px;
+}
+
+
+
+
+
