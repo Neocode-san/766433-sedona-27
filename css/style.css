@@ -27,15 +27,18 @@ a { text-decoration: none;
 .menu_list {
     list-style: none;
 }
-.menu_list>li {
+.menu_button {
     font-size: 14px;
     font-weight: bold;
     line-height: 26px;
     text-align: center;
+    padding-top: 22px;
+    padding-bottom: 22px;
 }
 .menu_button>a {
     color: #000000;
 }
+
 .menu_button>a:hover,
 .menu_button>a:focus {
     color: #81b3d2;
@@ -67,6 +70,54 @@ a { text-decoration: none;
     color: #333333;
     line-height: 1.86;
 }
+
+.feature_title {
+    font-size: 21px;
+  font-weight: bold;
+    line-height: 21px;
+    color: #ffffff;
+    text-align: center;
+}
+.feature_number, .feature_text {
+    font-size: 14px;
+  font-weight: normal;
+    line-height: 21px;
+    color: #ffffff;
+    text-align: center;
+}
+.feature_1, .feature_2 {
+    background-color: #81b3d2;
+}
+.small_feature_title {
+    font-size: 21px;
+  font-weight: bold;
+    text-align: center;
+    line-height: 21px;
+    color: #000000;
+}
+.small_fature_text {
+    font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+.feature_row4 .feature_title {
+    color: #000000;
+}
+.feature_row4 .feature_number {
+    color: #000000;
+}
+.feature_row4 .feature_text {
+    color: #000000;
+}
+.feature_row4 {
+    background-color: #eeeeee;
+}
+
+
+
+
 .interested {
     font-size: 30px;
   font-weight: bold;
@@ -101,6 +152,9 @@ a { text-decoration: none;
 .title_container:active a {
     background-color: #503e33;
     color: rgba(255, 255, 255, 0.3);
+}
+.title_container:active {
+    background-color: #503e33;
 }
 .hotel_search_title>a {
     color: #ffffff;
@@ -174,8 +228,11 @@ a { text-decoration: none;
 .social_list {
     list-style: none;
 }
-.social_list>li {
+.social_list_item {
     background-color: #81b3d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .social_list>li:hover,
 .social_list>li:focus {
@@ -261,7 +318,9 @@ a { text-decoration: none;
 .content {
     background-color: #ffffff;
 }
-
+.top_menu {
+    position: relative;
+}
 .menu_list {
     display: flex;
     margin-top: inherit;
@@ -270,16 +329,17 @@ a { text-decoration: none;
 
 }
 .menu_button {
-    width: 239px;
-    min-height: 56px;
+    width: 20%;
 }
-/* Перепробовал всё, чтобы выровнять текст ссылок внутри меню. Получается выровнять по горизонтали, а по вертикали не понимаю как это работает.*/
+
 .menu_button:nth-child(2) {
     margin-right: auto;
 }
 .menu_logo {
     position: absolute;
-    left: 600px;
+    left: 44%;
+    top: 0;
+
 }
 /* layout main */
 .banner {
@@ -289,7 +349,7 @@ a { text-decoration: none;
 }
 .banner_wrapper {
     height: 510px;
-    background-image: url(/766433-sedona-27/img/banner_main.jpg);
+    background-image: url(../img/banner_main.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -309,6 +369,49 @@ a { text-decoration: none;
     width: 434px;
     margin: 0 auto;
 }
+
+.feature_row1, .feature_row3 {
+    display: flex;
+    height: 256px;
+}
+.feature_1, .feature_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.feature_row2 {
+    display: flex;
+    height: 330px;
+    margin-top: 0;
+
+}
+.small_feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.feature_icon_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feature_row4 {
+    display: flex;
+    justify-content: space-around;
+    height: 256px;
+}
+.feature_3, .feature_4, .feature_5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+
 /* layout footer */
 .footer {
     height: 120px;
