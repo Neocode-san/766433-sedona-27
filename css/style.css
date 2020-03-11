@@ -85,6 +85,7 @@ a { text-decoration: none;
     line-height: 21px;
     color: #ffffff;
     text-align: center;
+    margin-top: 0px;
 }
 .feature_number, .feature_text {
     font-size: 14px;
@@ -93,6 +94,8 @@ a { text-decoration: none;
     color: #ffffff;
     text-align: center;
 }
+
+
 .feature_1, .feature_2 {
     background-color: #81b3d2;
 }
@@ -104,9 +107,9 @@ a { text-decoration: none;
     line-height: 21px;
     color: #000000;
 }
-.gift {
-    margin-top: 32px;
-}
+
+
+
 
 .small_fature_text {
     font-size: 14px;
@@ -115,6 +118,7 @@ a { text-decoration: none;
   text-align: center;
   color: #333333;
 }
+
 .feature_row4 .feature_title {
     color: #000000;
 }
@@ -136,6 +140,8 @@ a { text-decoration: none;
   font-weight: bold;
   line-height: 1.2;
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
 }
 .trip_date_choice {
     text-align: center;
@@ -144,8 +150,8 @@ a { text-decoration: none;
 }
 
 .map_container {
-    height: 594px;
-     margin-top: 138px;
+    height: 473px;
+     margin-top: 134px;
 }
 
 
@@ -182,17 +188,19 @@ a { text-decoration: none;
     box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
     margin-top: 0;
     padding: 55px;
+    padding-left: 56px;
 }
 
 .hotel_search_paragraph {
     display: flex;
     padding-bottom: 30px;
-    align-items: baseline;
+    align-items: center;
 }
 .trip_date_form {
     width: 346px;
     height: 38px;
     padding-left: 13px;
+    text-transform: uppercase;
 }
 .trip_date {
     position: relative;
@@ -202,6 +210,17 @@ a { text-decoration: none;
     left: 315px;
     top: 9px;
 }
+.calendar_icon path {
+    fill: #cacaca;
+}
+
+.calendar_icon:hover path {
+    fill: #000000;
+}
+.calendar_icon:active path {
+    fill: #81b3d2;
+}
+
 .trip_date_text {
     margin-right: auto;
 }
@@ -210,8 +229,35 @@ a { text-decoration: none;
     width: 38px;
     text-align: center;
 }
+.btn {
+    position: relative;
+}
+.btn:after,
+.btn:before{
+  content: ' ';
+  position: absolute;
+  background-color: gray;
+}
+
+.plus:after{
+  width: 3px;
+  top: 13px;
+  bottom: 14px;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.btn:before{
+  height: 3px;
+  left: 12px;
+  right: 15px;
+  top: 50%;
+  margin-top: -2px;
+}
+
 .tourist_quantity_form {
     display: flex;
+    background-color: #f2f2f2;
 }
 .people_count {
     display: flex;
@@ -222,13 +268,14 @@ a { text-decoration: none;
 }
 .adult_tourist_quantity {
     margin-right: 41px;
+
+
+
 }
 .find_hotel_button {
-    margin-top: 24px;
-    padding-top: 17px;
-    padding-bottom: 22px;
+margin-top: 22px;
     text-transform: uppercase;
-    padding: 24px 197px 22px 196px;
+    padding: 17.5px 196px 14.5px 196px;
 
 }
 
@@ -296,11 +343,10 @@ a { text-decoration: none;
   text-align: center;
     background-color: #f2f2f2;
     border: none;
-    padding-left: 16px;
+    padding-right: 1px;
+    padding-top: 1px;
 }
-.tourist_quantity_form {
-    background-color: #f2f2f2;
-}
+
 .minus, .plus {
     border: none;
     color: #cacaca;
@@ -316,8 +362,11 @@ a { text-decoration: none;
 .footer_contacts {
     font-size: 21px;
   font-weight: bold;
-  line-height: 1.24;
+  line-height: 26px;
   text-align: left;
+    padding-left: 35px;
+    max-width: 255px;
+
 }
 .social_list {
     list-style: none;
@@ -349,6 +398,11 @@ a { text-decoration: none;
   font-weight: normal;
   line-height: 1.86;
   text-align: center;
+    padding-right: 9px;
+}
+.academy_logo {
+    padding-top: 3px;
+    padding-right: 3px;
 }
 
 
@@ -430,9 +484,28 @@ a { text-decoration: none;
     width: 20%;
 }
 
+.menu_button:first-child {
+   padding-right: 2px;
+}
+
+
 .menu_button:nth-child(2) {
     margin-right: auto;
+    padding-left: 3px;
+    padding-bottom: 1px;
 }
+
+.menu_button:nth-child(3) {
+    padding-left: 2px;
+}
+
+
+.menu_button:nth-child(4) {
+    padding-left: 17px;
+    padding-bottom: 4px;
+}
+
+
 .menu_logo {
     position: absolute;
     left: 44%;
@@ -442,52 +515,108 @@ a { text-decoration: none;
 .banner {
     width: 458px;
     margin: 0 auto;
-    padding-top: 61px;
+    padding-top: 77px;
 }
 .banner_wrapper {
-    height: 510px;
+    height: 508px;
     background-image: url(../img/banner_main.jpg);
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: 0 -82px;
+
 }
 .banner_decorations {
-    margin-top: 33px;
+    margin-top: 15px;
 }
 .page_title {
     width: 440px;
     margin: 0 auto;
     margin-top: 61px;
-    margin-bottom: 38px;
+    margin-bottom: 28px;
 }
 .trip_reasons {
     display: block;
     width: 489px;
     margin: 0 auto;
-    margin-bottom: 56px;
+    margin-bottom: 49px;
 }
 .trip_date_choice {
-    width: 434px;
+    width: 440px;
     margin: 0 auto;
+
 }
 
-.feature_row1, .feature_row3 {
+.feature{
     display: flex;
     height: 256px;
+
 }
 .feature_1, .feature_2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    max-width: 400px;
 }
 .feature_1 {
     padding:46px 60px 64px 60px;
 }
+.feature_number {
+    padding-top: 5px;
+}
 .feature_text {
     margin-bottom: 0;
+    padding-top: 5px;
 }
-.feature_title {
-    margin-top: 0px;
+.feature_1 .feature_title {
+    width: 200px;
+    padding-left: 80px;
 }
+.feature_row4 .feature_title {
+    width: 120px;
+    margin-left: 141px;
+    padding-top: 46px;
+
+}
+
+.feature_row4 .feature_number {
+    padding-top: 5px;
+}
+.feature_row4 .feature_text {
+    width: 260px;
+    margin-left: 70px;
+    padding-bottom: 20px;
+}
+.feature_row4 .road_description {
+    width: 270px;
+    margin-left: 66px;
+}
+.feature_row4 .tourist_description {
+    width: 250px;
+    margin-left: 75px;
+}
+
+.housing {
+    width: 256px;
+    margin-left: 72px;
+    margin-top: 25px;
+}
+
+.burger_description {
+    width: 288px;
+    margin-left: 56px;
+    margin-top: 24px;
+}
+.gift_container{
+    padding-left: 2px;
+}
+.gift {
+    margin-top: 25px;
+}
+.gift_description {
+
+    padding-left: 30px;
+    margin-right: 30px;
+    padding-top: 12px;
+}
+
 .feature_2 {
     padding: 49px 49px 65px 48px;
 }
@@ -500,13 +629,14 @@ a { text-decoration: none;
 .small_feature {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-content: center;
+    width: 33.3333%;
 }
 .feature_icon_container {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 59px;
 }
 .feature_row4 {
     display: flex;
@@ -516,10 +646,14 @@ a { text-decoration: none;
 .feature_3, .feature_4, .feature_5 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    width: 33.3333%;
 }
-
+.devils_bridge {
+    margin-bottom: 15px;
+}
+.bridge_description {
+    padding-top: 7px;
+}
 
 
 
@@ -529,12 +663,16 @@ a { text-decoration: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+
+
 }
 .social_list {
     display: flex;
     width: 150px;
     justify-content: space-between;
     padding: 0;
+    margin-right: 40px;
 }
 .social_list>li {
     width: 46px;
@@ -544,36 +682,40 @@ a { text-decoration: none;
     width: 100%;
     margin: auto;
 }
+.social {
+    padding-right: 3px;
+}
 .academy_credits {
-    width: 197px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 9px;
 }
 /* layout catalog */
 .hotels_list {
     padding-left: 0;
+
 }
 .hotels_card {
     display: flex;
-    padding-top: 30px;
+    padding-top: 11px;
     padding-left: 72px;
-    padding-bottom: 30px;
-
+    padding-bottom: 45px;
 }
+
 .hotel_description {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 90px;
+
 }
 .hotel_description_row1 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-
 }
+
 
 .hotel_description_row3 {
     display: flex;
@@ -591,6 +733,7 @@ a { text-decoration: none;
 .hotel_title {
     padding: 0;
     margin: 0;
+
 }
 .catalog_button {
     padding: 3px 17px 3px 17px;
@@ -632,8 +775,8 @@ a { text-decoration: none;
     background-position: 0;
     padding-left: 72px;
     padding-right: 74px;
-    padding-top: 31px;
-    padding-bottom: 31px;
+    padding-top: 17px;
+    padding-bottom: 15px;
 }
 .form_checkbox, .price {
     font-size: 14px;
@@ -642,8 +785,19 @@ a { text-decoration: none;
   text-align: left;
   color: #ffffff;
 }
-.price {
-    text-align: center;
+
+
+
+.pseudo_checkbox{
+  width: 27px;
+  height: 27px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  background: url(../img/checkbox-off.svg) left center no-repeat;
+}
+
+.form_checkbox input:not(.disabled):checked ~ .pseudo_checkbox{
+ background: url(../img/checkbox-on.svg) no-repeat left center;
 }
 
 .found {
@@ -652,6 +806,7 @@ a { text-decoration: none;
   line-height: 26px;
   text-align: left;
   color: #000000;
+
     margin-right: 49px;
 }
 .sort {
@@ -696,7 +851,7 @@ margin-right: 40px;
     padding-right: 73px;
     padding-top: 31px;
     padding-bottom: 33px;
-    align-items: baseline;
+
 }
 .sort_up {
     margin-right: 11px;
@@ -727,31 +882,73 @@ margin-right: 40px;
 
 
 .checkbox_filter {
-    margin-right: 115px;
+    margin-right: 120px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 .pricing {
     margin-left: auto;
+    padding-top: 10px;
 }
 .form_checkbox {
     cursor: pointer;
+    display: flex;
+
 }
-.form_checkbox input[type="checkbox"]:checked + .checkbox_off {
-    background-image: url(../img/checkbox-on.svg);
-}
+
 
 .price_min, .price_max {
     background-color: transparent;
     border: none;
     text-transform: uppercase;
-    width: 153px;
+    width: 154px;
     font-size: 14px;
   line-height: 21px;
-    padding-top: 3.5px;
-    padding-bottom: 3.5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
   text-align: center;
   color: #ffffff;
+}
+.price_line {
+    position: relative
+}
+.price_line::before {
+    content: "";
+    top: 22px;
+    position: absolute;
+    left: 3px;
+    width: 250px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.price_line::after {
+    content: "";
+    top: 22px;
+    left: 251px;
+    position: absolute;
+    width: 66px;
+    opacity: 0.3;
+  height: 2px;
+  background-color: #ffffff;
+}
+.price_range {
+    position: relative;
+
+}
+.range_button {
+    position: absolute;
+    top: 14px;
+    left: 0px;
+}
+.second {
+    left: 252px;
+}
+
+.pricing_range {
+    margin-top: -2px;
 }
 .price_min::placeholder, .price_max::placeholder {
     font-size: 14px;
@@ -774,6 +971,7 @@ margin-right: 40px;
 .price {
     border: solid 2px #ffffff;
     border-radius: 3px;
+    margin-top: 8px;
 }
 
 .show_hotels {
@@ -784,9 +982,12 @@ margin-right: 40px;
   text-align: left;
   color: #ffffff;
     text-transform: uppercase;
-    padding: 11px 33px 11px 35px;
+    padding: 5px 33px 5px 33px;
     display: block;
-    margin: 30px auto;
+    margin: 20px auto;
+    margin-right: 95px;
+    margin-top: 56px;
+    border-radius: 3px;
 }
 .show_hotels:hover {
     background-color: #ffffff;
@@ -801,7 +1002,14 @@ margin-right: 40px;
 }
 
 
-
+.layer {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -640px;
+    opacity: 0.3;
+    z-index: 2;
+}
 
 
 
