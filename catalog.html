@@ -65,34 +65,34 @@
                   <div class="pricing">
                       <span class="filter_title">Стоимость в сутки (Р):</span>
                       <div class="price">
-                         <input class="price_min" type="number" placeholder="от 0" name="min_price">
+                         <input class="price_min" type="text" value="от 0" name="min_price">
                          <span class="pricing_border"></span>
-                         <input class="price_max" type="number" placeholder="До 3000" name="max_price">
+                         <input class="price_max" type="text" value="До 3000" name="max_price">
 
                       </div>
                       <div class="pricing_range">
                       <input class="visually-hidden" type="range" id="price" name="price"
          min="0" max="3000">
-                      <div class="price_range">
-                        <img class="range_button first" src="img/filter-button.svg" height="20" width="22" alt="">
-                        <img class="range_button second" src="img/filter-button.svg" height="20" width="22" alt="">
-                       <span class="price_line"></span>
-                       </div>
                         </div>
+                        <div class="line-box">
+  <div style="left: 0.15%;" class="point"></div>
+  <div style="right: 13%;" class="point"></div>
+  <div style="left: 0.15%; right: 13%;" class="line"></div>
+</div>
                         <button class="show_hotels" type="submit">Показать</button>
                   </div>
 
               </form>
           </div>
             <div class="results">
-                <a href="#" class="found">Найдено: 3</a>
-                <a href="#" class="sort">Сортировка:</a>
+                <span class="found">Найдено: 3</span>
+                <span class="sort">Сортировка:</span>
                 <a href="#" class="by_price">По цене</a>
                 <a href="#" class="by_type">По типу</a>
                 <a href="#" class="by_rating">По рейтингу</a>
-                <svg class="sort_up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <svg class="sort_up" width="11" height="10" viewBox="0 0 11 10">
     <path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
-                <svg class="sort_down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+                <svg class="sort_down" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
             </div>
 
             <section class="catalog_hotels">
@@ -100,11 +100,11 @@
                     <li class="hotels_card">
                         <div class="hotel_photo_block"><img class="hotel_photo" src="img/hotel_photo_1.jpg" width="135" height="90" alt="Фотография отеля Amara Resort &#38; Spa"></div>
                         <div class="hotel_description">
-                            <div class="hotel_description_row1">
+                            <div class="hotel_description_row1 first_row">
                                 <h3 class="hotel_title">Amara Resort &#38; Spa</h3>
                                 <span class="rating_stars"> <img class="star" src="img/star.svg" alt=""> <img class="star" src="img/star.svg" alt=""> <img class="star" src="img/star.svg" alt=""> <img class="star" src="img/star.svg" alt=""> </span>
                             </div>
-                            <div class="hotel_description_row2">
+                            <div class="hotel_description_row2 ">
                                 <span class="hotel_type">Гостиница</span>
                                 <span class="hotel_price">От 4000 р.</span>
                             </div>
@@ -118,7 +118,7 @@
                     <li class="hotels_card">
                         <div class="hotel_photo_block"><img class="hotel_photo" src="img/hotel_photo_2.jpg" width="135" height="90" alt="Фотография мотеля Desert Quail Inn"></div>
                         <div class="hotel_description">
-                            <div class="hotel_description_row1">
+                            <div class="hotel_description_row1 second_row">
                                 <h3 class="hotel_title">Desert Quail Inn</h3>
                                 <span class="rating_stars"> <img class="star" src="img/star.svg" alt=""> <img class="star" src="img/star.svg" alt=""> <img class="star" src="img/star.svg" alt=""></span>
                             </div>
@@ -156,7 +156,7 @@
         </main>
         <footer class="footer">
             <p class="footer_contacts">#VISITSEDONA
-               Тел:+7(495) 666-02-66</p>
+             <a href="tel:+7(495) 666-02-66">Тел:+7(495) 666-02-66</a></p>
             <div class="social">
                 <ul class="social_list">
                     <li class="social_list_item">
