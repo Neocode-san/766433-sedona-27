@@ -81,6 +81,7 @@ a {
     font-weight: bold;
     line-height: 26px;
     text-align: center;
+    letter-spacing: -0.1px;
 }
 
 .trip_reasons {
@@ -88,6 +89,7 @@ a {
     text-align: center;
     color: #333333;
     line-height: 1.86;
+    letter-spacing: -0.1px;
 }
 
 .feature_title {
@@ -234,6 +236,7 @@ a {
     height: 22px;
     border: none;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .calendar_icon path {
