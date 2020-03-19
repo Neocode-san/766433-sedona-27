@@ -14,7 +14,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'PT Sans', Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
@@ -31,7 +31,7 @@ a {
     text-decoration: none;
 }
 
-.visually-hidden {
+.visually_hidden {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
@@ -247,6 +247,10 @@ a {
     fill: #000000;
 }
 
+.calendar_icon:focus path {
+    fill: #000000;
+}
+
 .calendar_icon:active path {
     fill: #81b3d2;
 }
@@ -267,14 +271,14 @@ a {
     position: relative;
 }
 
-.btn:after,
-.btn:before {
-    content: ' ';
+.btn::after,
+.btn::before {
+    content: "";
     position: absolute;
     background-color: gray;
 }
 
-.plus:after {
+.plus::after {
     width: 3px;
     top: 13px;
     bottom: 14px;
@@ -282,12 +286,42 @@ a {
     margin-left: -3px;
 }
 
-.btn:before {
+.btn::before {
     height: 3px;
     left: 12px;
     right: 15px;
     top: 50%;
     margin-top: -2px;
+}
+
+.btn:hover:before {
+    content: "";
+    background-color: #000000;
+}
+
+.btn:focus:before {
+    content: "";
+    background-color: #000000;
+}
+
+.btn:hover:after {
+    content: "";
+    background-color: #000000;
+}
+
+.btn:focus:after {
+    content: "";
+    background-color: #000000;
+}
+
+.btn:active:before {
+    content: "";
+    background-color: #81b3d2;
+}
+
+.btn:active:after {
+    content: "";
+    background-color: #81b3d2;
 }
 
 .tourist_quantity_form {
@@ -400,16 +434,6 @@ a {
 .plus {
     border: none;
     color: #cacaca;
-}
-
-.minus:hover,
-.plus:hover {
-    color: #000000;
-}
-
-.minus:active,
-.plus:active {
-    color: #81b3d2;
 }
 
 .footer_contacts {
@@ -941,6 +965,7 @@ a {
     display: inline-block;
     width: 110px;
     margin-right: 6px;
+    vertical-align: baseline;
 }
 
 .catalog_filter_form {
@@ -965,6 +990,7 @@ a {
     padding-right: 74px;
     padding-top: 17px;
     padding-bottom: 15px;
+    background-color: #81b3d2;
 }
 
 .form_checkbox,
@@ -987,6 +1013,14 @@ a {
 
 .form_checkbox input:not(.disabled):checked ~ .pseudo_checkbox {
     background: url(../img/checkbox-on.svg) no-repeat left center;
+}
+
+.form_checkbox input[type=checkbox]:disabled ~ .pseudo_checkbox {
+    background: url(../img/checkbox-off-disabled.png) left center no-repeat;
+}
+
+.form_checkbox input[type=checkbox]:disabled:checked ~ .pseudo_checkbox {
+    background: url(../img/checkbox-on-disabled.png) left center no-repeat;
 }
 
 .found {
@@ -1030,6 +1064,11 @@ a {
 
 .by_type:hover,
 .by_rating:hover {
+    color: #81b3d2;
+}
+
+.by_type:focus,
+.by_rating:focus {
     color: #81b3d2;
 }
 
@@ -1182,8 +1221,14 @@ a {
     transform: scale(1.1);
 }
 
+.point:focus {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 .point:after {
-    content: ' ';
+    content: "";
     width: 4px;
     height: 4px;
     position: absolute;
@@ -1252,7 +1297,16 @@ a {
     color: #000000;
 }
 
+.show_hotels:focus {
+    background-color: #ffffff;
+    color: #000000;
+}
+
 .html_academy_icon:hover path {
+    fill: #81b3d2;
+}
+
+.html_academy_icon:focus path {
     fill: #81b3d2;
 }
 
